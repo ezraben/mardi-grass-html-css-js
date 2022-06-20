@@ -1,0 +1,65 @@
+:root {
+  --purper: #9653a6;
+  --greenMardi: #8cbf3f;
+  --whiteMardi: #f2f2f2;
+  --blackMardi: #0d0d0d;
+}
+
+@media screen and(max-width:768px) {
+  legend {
+    font-size: 1.7em;
+  }
+
+  textarea {
+    width: 40%;
+  }
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+#error {
+  font-size: 1.5rem;
+  color: crimson;
+  background-color: #8b8989;
+}
+fieldset {
+  margin: 2em 0;
+  padding: 1em 2em;
+  border: 1px solid #0d0d0d;
+  border-radius: 6px;
+  min-width: 200px;
+}
+legend {
+  font-size: 1.25em;
+  padding: 0 0.25em;
+  color: #333;
+}
+label {
+  margin-top: 1em;
+  display: block;
+}
+label:first-of-type {
+  margin-top: 0;
+}
+input {
+  padding: 0.5em;
+  border: 1px solid #0d0d0d;
+}
+textarea {
+  min-height: 8em;
+  width: 60vw;
+  padding: 0.5em;
+  border: 1px solid #0d0d0d;
+  margin-bottom: 5vh;
+}
+#btn {
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+}

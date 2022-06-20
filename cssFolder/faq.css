@@ -1,0 +1,65 @@
+:root {
+  --purper: #9653a6;
+  --greenMardi: #8cbf3f;
+  --whiteMardi: #f2f2f2;
+  --blackMardi: #0d0d0d;
+}
+
+h1 {
+  padding-top: 5px;
+  padding-left: 5vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.flexItem {
+  align-items: center;
+  width: 75vw;
+  padding: 10px;
+  margin: 20px;
+  line-height: 1rem;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px var(--blackMardi);
+}
+
+#qus-1,
+#qus-2,
+#qus-3,
+#qus-4,
+#qus-5,
+#qus-6,
+#qus-7 {
+  background-color: var(--greenMardi);
+  display: flex;
+  justify-content: space-between;
+}
+#qus-1:hover,
+#qus-2:hover,
+#qus-3:hover,
+#qus-4:hover,
+#qus-5:hover,
+#qus-6:hover,
+#qus-7:hover {
+  color: var(--greenMardi);
+  background-color: var(--purper);
+  cursor: pointer;
+}
+
+#ans-1,
+#ans-2,
+#ans-3,
+#ans-4,
+#ans-5,
+#ans-6,
+#ans-7 {
+  background-color: var(--purper);
+  display: none;
+  line-height: 2rem;
+
+  font-size: 1.5rem;
+  padding: 10vh;
+}

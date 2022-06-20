@@ -1,0 +1,295 @@
+@media screen and (max-width: 768px) {
+  .row {
+    justify-content: center;
+  }
+
+  #walk-on-big-window,
+  #Sheraton_big_window,
+  #Ace_hotel_big_window,
+  #the_ritz_big_window,
+  #parking_big_window,
+  #Louisiana_CHildren_museam_big_window,
+  #Museum_of_death_big_window,
+  #Hunted_museum_big_window {
+    min-height: 100vh;
+    width: 75vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h2_window {
+    margin-top: 5vh;
+  }
+  .window-text {
+    padding: 20px;
+    margin-bottom: 10vh;
+    overflow-y: scroll;
+  }
+
+  a.link-window {
+    position: relative;
+    bottom: 7vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .h2_window {
+    font-size: 16px;
+    color: var(--purper);
+  }
+  .window-text {
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 41px var(--blackMardi);
+    margin-top: 50px;
+  }
+
+  .close {
+    font-size: 1rem;
+    background-color: #8cbf3f;
+  }
+}
+
+.slideshow-container {
+  position: relative;
+
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+
+  width: 100vw;
+  height: 100px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.fade:not(.show) {
+  opacity: 1;
+}
+#img1,
+#img2,
+#img3,
+#img4,
+#img5 {
+  display: none;
+
+  width: 100vw;
+  height: 70vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("https://cdn.pixabay.com/photo/2014/01/31/16/29/new-orleans-255548_960_720.jpg");
+}
+#img2 {
+  background-image: url(https://cdn.pixabay.com/photo/2019/04/12/21/38/frame-4123320_960_720.jpg);
+}
+#img3 {
+  background-image: url(https://cdn.pixabay.com/photo/2015/10/20/17/01/carnival-998092_960_720.jpg);
+}
+#img4 {
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/13/05/49/mardi-gras-1090720_960_720.jpg);
+}
+#img5 {
+  background-image: url(https://cdn.pixabay.com/photo/2016/02/10/16/00/mardi-gras-1191970_960_720.jpg);
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 2vw;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  background-color: #71717171;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0, 1);
+
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  font-weight: bold;
+  background-color: #71717171;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0, 1);
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* -----slider end */
+#walk-on-big-window,
+#Sheraton_big_window,
+#Ace_hotel_big_window,
+#the_ritz_big_window,
+#parking_big_window,
+#Louisiana_CHildren_museam_big_window,
+#Museum_of_death_big_window,
+#Hunted_museum_big_window {
+  min-height: 100vh;
+  width: 75vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.h2_window {
+  margin-top: 5vh;
+}
+
+.img-window {
+  margin-bottom: 10vh;
+}
+.link-window {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+#aricalsSec {
+  padding-top: 30vh;
+}
+
+.articleH3 {
+  text-align: center;
+}
+
+.article {
+  width: 75vw;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 5vh auto 20vh auto;
+  height: 50vh;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  border: 5px solid var(--blackMardi);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px var(--whiteMardi);
+}
+
+.card {
+  box-shadow: black 10px 5px 5px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #404040;
+  color: white;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+#walk-on-big-window,
+#Sheraton_big_window,
+#Ace_hotel_big_window,
+#the_ritz_big_window,
+#parking_big_window,
+#Louisiana_CHildren_museam_big_window,
+#Museum_of_death_big_window,
+#Hunted_museum_big_window {
+  display: none;
+  height: 75vh;
+  width: 75vw;
+  background-color: var(--greenMardi);
+  color: var(--whiteMardi);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin-left: 20px;
+  padding: 20px;
+  z-index: 999;
+  border-radius: 25px;
+}
+.card_big_window {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.window-text {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+.img-window {
+  display: flex;
+}
+.link-window {
+  font-size: 1.2rem;
+}
+
+.close {
+  font-size: 1.7rem;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #0d0d0d;
+}

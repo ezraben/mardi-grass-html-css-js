@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --purper: #9653a6;
+  --greenMardi: #8cbf3f;
+  --whiteMardi: #f2f2f2;
+  --blackMardi: #0d0d0d;
+}
+body {
+  background-image: linear-gradient(#9653a6, #f2f2f2, #8cbf3f);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #f2cc0f;
+}
+.logo {
+  width: 100px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+}
+
+nav li {
+  list-style: none;
+}
+.navLinks a {
+  text-decoration: none;
+}
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 5px;
+  margin: 5px;
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  padding-bottom: 5vh;
+  color: #f2f2f2;
+  text-shadow: 4px 4px 4px #0d0d0d;
+}
+
+#smallNavCOntainer {
+  min-height: 100vh;
+  font-size: 1.5em;
+  margin: 10px 0 10px 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+}
+#smallNavCOntainer div {
+  z-index: 999;
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+/* slider------- */
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #f2cc0f;
+  position: relative;
+  padding: 10px;
+}
+.footerItems {
+  margin-bottom: 0;
+}
+footer li {
+  list-style: none;
+}
+
+.footerImg {
+  width: 3vw;
+}
+
+body > footer > ul > li:nth-child(1) > a > img {
+  width: 15vw;
+}
+
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navLinks {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: #f2cc0f;
+    transition: transform 0.5s ease-in;
+  }
+  .navLinks li {
+    opacity: 0;
+  }
+  .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 1em;
+    top: 10px;
+    left: 35%;
+  }
+  .burger {
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .footerImg {
+    width: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #smallnaveManu {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #smallSlid {
+    display: block;
+  }
+
+  .footerImg {
+    width: 7vw;
+  }
+}

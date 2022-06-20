@@ -1,0 +1,103 @@
+:root {
+  --purper: #9653a6;
+  --greenMardi: #8cbf3f;
+  --whiteMardi: #f2f2f2;
+  --blackMardi: #0d0d0d;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.subTitle {
+  text-align: center;
+  line-height: 2rem;
+  margin: 20px 20px;
+}
+.content {
+  line-height: 1.5rem;
+  padding: 10px;
+  border: 3px solid var(--greenMardi);
+  width: 75vw;
+  border-radius: 25px;
+  box-shadow: 8px 8px 4px var(--whiteMardi);
+}
+.content p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 20px;
+}
+#showGeneral,
+#showHistory,
+#showColors,
+#showCostum,
+#showTreditions,
+#showDoubloons,
+#showflambu {
+  display: none;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 20px;
+}
+.Rdmore {
+  color: blue;
+}
+.Rdmore:hover {
+  cursor: pointer;
+  color: var(--whiteMardi);
+  background-color: var(--purper);
+}
+
+.closeWindow,
+#closeGeneral,
+#closeHistory,
+#closeColors,
+#closeCostun,
+#closeTraditiions,
+#closeDoubloons,
+#closeFlambeau {
+  display: none;
+}
+
+#Myaor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 75vw;
+  margin: 5vh;
+  padding: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--greenMardi);
+  border: 2px solid #9653a6;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px #f2f2f2;
+}
+#MyaorImg {
+  margin: 5vh;
+  width: 200px;
+  border-radius: 100px;
+  border: 2px solid;
+  box-shadow: 6px 6px;
+}
+#mayorLinksConatiner {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #smallMayor {
+    height: 75vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+}

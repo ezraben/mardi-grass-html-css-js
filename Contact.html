@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital,wght@0,100;0,300;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./cssFolder/contact.css" />
+    <link rel="stylesheet" href="./cssFolder/trivia.css" />
+
+    <link rel="icon" href="./images/icons/favicon.ico" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="./images/icons/logo.png"
+            alt="mardi gras logo"
+        /></a>
+
+        <ul id="smallNav" class="navLinks">
+          <li class="navItems"><a href="./index.html">Home</a></li>
+          <li class="navItems"><a href="./About.html">About us</a></li>
+          <li class="navItems"><a href="./Media.html">Media</a></li>
+          <li class="navItems"><a href="./FAQ.html">FAQ</a></li>
+          <li class="navItems"><a href="./Contact.html">Contact us</a></li>
+        </ul>
+        <div id="burger" class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <h1>Contact us</h1>
+    <section id="smallnaveManu">
+      <div id="smallNavCOntainer">
+        <div><a href="./About.html">About</a></div>
+        <div><a href="./Contact.html">Contact us</a></div>
+        <div><a href="./FAQ.html">FAQ</a></div>
+        <div><a href="./Media.html">Media</a></div>
+      </div>
+    </section>
+
+    <div class="formContainer">
+      <!-- <form id="form" action="/"> -->
+      <form id="form">
+        <fieldset>
+          <legend>Contact us</legend>
+          <div id="error"></div>
+
+          <label for="firstName">First name</label>
+          <input id="firstName" type="text" name="name" />
+
+          <label for="last name">Last name</label>
+          <input id="lastName" type="text" name="last name" />
+
+          <label for="">email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="user@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+          />
+
+          <label for="textarea"
+            >feel free to write anything up to 10 rows</label
+          >
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <input type="submit" id="btn" value="submit" />
+        </fieldset>
+      </form>
+    </div>
+
+    <aside>
+      <div id="openTrv">
+        <p>click me for some trivia quiz</p>
+      </div>
+      <div id="triviaContainer">
+        <p id="close">close window</p>
+        <h3>trivia</h3>
+        <div id="trvMsg"></div>
+        <div id="question1">
+          <b> where is mardu gras festival?</b>
+          <p id="ans1">1. boston</p>
+          <p id="ans2">2. new-orleans</p>
+          <p id="ans3">3. amsterdam</p>
+          <p id="ans4">4. jerusalem</p>
+          <div class="scrMsg"></div>
+        </div>
+        <div id="question2" class="qes">
+          <b> who is the mayor of new orleans?</b>
+          <p id="q2ans1">1. me</p>
+          <p id="q2ans2">2. itamar zukerman</p>
+          <p id="q2ans3">3. LaToya Cantrell</p>
+          <p id="q2ans4">4. you</p>
+          <div></div>
+        </div>
+        <div id="question3" class="qes">
+          <b> is there a parade every year?</b>
+          <p id="q3ans1">1. it is twice a yera</p>
+          <p id="q3ans2">2. once evry 3 years</p>
+          <p id="q3ans3">3. up to the weather</p>
+          <p id="q3ans4">4. yes it is a main event</p>
+          <div></div>
+        </div>
+        <div id="question4" class="qes">
+          <b> What day comes after Mardi Gras?</b>
+          <p id="q4ans1">1. sunday</p>
+          <p id="q4ans2">2. 5 of March</p>
+          <p id="q4ans3">3. Ash Wednesday</p>
+          <p id="q4ans4">4. Ashkelon</p>
+          <div></div>
+        </div>
+        <div id="question5" class="qes">
+          <b> Where was the first known carnival celebration?</b>
+          <p id="q5ans1">1. Nice</p>
+          <p id="q5ans2">2. london</p>
+          <p id="q5ans3">3. new-orleans</p>
+          <p id="q5ans4">4. Ashkelon</p>
+          <div></div>
+        </div>
+        <div id="question6" class="qes">
+          <b> When was the earliest known carnival celebration?</b>
+          <p id="q6ans1">1. 1998</p>
+          <p id="q6ans2">2. 1294</p>
+          <p id="q6ans3">3. 795</p>
+          <p id="q6ans4">4. 2006</p>
+          <div></div>
+        </div>
+        <div id="question7" class="qes">
+          <b> What is the signature Mardi Gras dessert?</b>
+          <p id="q7ans1">1. cake</p>
+          <p id="q7ans2">2. bob's cake</p>
+          <p id="q7ans3">3. queen cake</p>
+          <p id="q7ans4">4. king cake</p>
+          <div></div>
+        </div>
+        <div id="question8" class="qes">
+          <b> What states recognize Fat Tuesday as a holiday?</b>
+          <p id="q8ans1">1. florida</p>
+          <p id="q8ans2">2. Louisiana, Florida and Alabama</p>
+          <p id="q8ans3">3. new york</p>
+          <p id="q8ans4">4. california</p>
+          <div></div>
+        </div>
+        <div id="question9" class="qes">
+          <b> What is the most popular food for Shrove Tuesday?</b>
+          <p id="q9ans1">1. Pancakes</p>
+          <p id="q9ans2">2. cakes</p>
+          <p id="q9ans3">3. fruit</p>
+          <p id="q9ans4">4. fish</p>
+          <div></div>
+        </div>
+        <div id="question10" class="qes">
+          <b> is this the last question?</b>
+          <p id="q10ans1">1. no</p>
+          <p id="q10ans2">2. yes</p>
+          <p id="q10ans3">3. maybe</p>
+          <p id="q10ans4">4. never</p>
+          <div></div>
+        </div>
+
+        <h4>yor score:</h4>
+        <span id="currentSqr"></span>
+      </div>
+    </aside>
+
+    <footer>
+      <ul class="footerItems">
+        <li>
+          <a href="./index.html"
+            ><img
+              src="./images/icons/logo.png"
+              class="footerImg footerImgNew"
+              alt="logo"
+          /></a>
+        </li>
+
+        <li>
+          <a href="mailto:ezrabn0@gmail.com"
+            ><img
+              src="./images/icons/gmail.png"
+              class="footerImg"
+              alt="gmail icon"
+          /></a>
+        </li>
+
+        <li>
+          <a href="https://linkedin.com/in/ezra-ben-natan-8234a51a5"
+            ><img
+              src="./images/icons/linkedin-logo.png"
+              class="footerImg"
+              alt="linkedin-logo"
+          /></a>
+        </li>
+        <li>
+          <img
+            src="./images/icons/copyright.png"
+            class="footerImg"
+            alt="copyright logo"
+          />copyright <em>EBN</em>
+        </li>
+      </ul>
+    </footer>
+    <script src="./js/contact.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/trivia.js"></script>
+  </body>
+</html>
